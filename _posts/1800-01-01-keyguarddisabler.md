@@ -1,11 +1,14 @@
 ---
 layout: app
-appName: 
-buyMeUrl: 
-tryMeUrl: 
+appName: Keyguard Disabler
+
+buyMeUrl: https://market.android.com/details?id=com.blau.android.keyguard
 
 promoText: 
-aboutText: 
+aboutText: "No more fiddling with swiping the screen or pressing menu to unlock your phone.
+Disables the keyguard so you don't have to hit menu or swipe to unlock the phone.
+Tested on Nexus S, HTC Sensation, Evo 3D, Optimus 3D.
+Note: Does not disable Exchange related pin entry on most devices."
 
 review1Blurb: 
 review1Url: 
