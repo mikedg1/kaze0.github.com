@@ -1,0 +1,12 @@
+---
+layout: main
+title: Portfolio
+---
+ 
+<section class="content">
+  {% for post in site.posts %}
+  <a data-placement="below" href="{{ post.url }}" onClick="javascript:window.location.href='{{ post.url }}'" rel="popover" title="{{ post.appName }}" data-content="{{ post.promoText }}">
+   <img class="thumbnail" src="http://placehold.it/72x72" alt="">
+  </a> 
+  {% endfor %}
+</ul>

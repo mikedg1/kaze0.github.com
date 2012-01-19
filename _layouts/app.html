@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Mike dg's {{ page.appName }}</title> 
+    <meta name="description" content="">
+    <meta name="author" content="Michael DiGiovanni">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/bootstrap/bootstrap.css" rel="stylesheet">
+    <script src="/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="/lightbox2.05/js/prototype.js"></script>
+    <script type="text/javascript" src="/lightbox2.05/js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="/lightbox2.05/js/lightbox.js"></script>
+    <link rel="stylesheet" href="/lightbox2.05/css/lightbox.css" type="text/css" media="screen" />
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="container">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <div class="row">
+          <div class="span8">
+		    <h1>{{ page.appName }}!</h1>
+			<div class="row">
+	          <div class="span8">
+	            <p>{{ page.promoText }}</p>
+	              <div class="row">
+	                <div class="span3">
+					{% if page.buyMeUrl %}
+	                  <a class="btn primary large" href="{{ page.buyMeUrl }}">Buy Me &raquo;</a>
+					{% else %}
+	                	<a class="btn primary large" href="{{ page.tryMeUrl }}">Get Me FREE &raquo;</a>
+					{% endif %}
+	                </div>
+	                <div class="span2">
+	                &nbsp;
+	                </div>
+	                <div class="span2">
+					{% if page.buyMeUrl %}
+		              <a class="btn info large" href="{{ page.tryMeUrl }}">Try Me &raquo;</a>
+					{% endif %}
+	                </div>
+	              </div>
+	          </div>
+	        </div>
+		  </div>
+
+		<div class="span4">
+          <ul class="media-grid">
+            <li>
+              <a href="/img/{{ page.appName }}/main.png" rel="lightbox" title="{{ page.appName }}">
+                <img class="thumbnail" src="/img/{{ page.appName }}/mainThumb.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+		</div>        
+        
+      </div>
+
+      <ul class="media-grid">
+        <li>
+          <a href="/img/{{ page.appName }}/1.png" rel="lightbox" title="{{ page.appName }}E">
+            <img class="thumbnail" src="/img/{{ page.appName }}/1Thumb.png" alt="">
+          </a>
+          <a href="/img/{{ page.appName }}/2.png" rel="lightbox" title="{{ page.appName }}">
+            <img class="thumbnail" src="/img/{{ page.appName }}/2Thumb.png" alt="">
+          </a>
+          <a href="/img/{{ page.appName }}/3.png" rel="lightbox" title="{{ page.appName }}">
+            <img class="thumbnail" src="/img/{{ page.appName }}/3Thumb.png" alt="">
+          </a>
+          <a href="/img/{{ page.appName }}/4.png" rel="lightbox" title="{{ page.appName }}">
+            <img class="thumbnail" src="/img/{{ page.appName }}/4Thumb.png" alt="">
+          </a>
+        </li>
+      </ul>
+      
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span6">
+          <h2>About {{ page.appName }}</h2>
+          <p>{{ page.aboutText }}</p>
+        </div>
+        <div class="span5">
+          <h2>What users are saying</h2>
+          <blockquote>
+           	<p>{{ page.user1Blurb }}</p>
+         	<small>{{ page.user1Name }}</small>
+        </blockquote>
+        <blockquote>
+           	<p>{{ page.user2Blurb }}</p>
+         	<small>{{ page.user2Name }}</small>
+        </blockquote>
+        <blockquote>
+           	<p>{{ page.user3Blurb }}</p>
+         	<small>{{ page.user3Name }}</small>
+        </blockquote>
+       </div>
+        <div class="span5">
+          <h2>Reviews</h2>
+          <blockquote>
+            <p>{{ page.review1Blurb }}</p>
+            <small><a href="{{ page.review1Url }}">{{ page.review1Name }}</a></small>
+          </blockquote>
+          <blockquote>
+            <p>{{ page.review2Blurb }}</p>
+            <small><a href="{{ page.review2Url }}">{{ page.review2Name }}</a></small>
+          </blockquote>
+          <blockquote>
+            <p>{{ page.review3Blurb }}</p>
+            <small><a href="{{ page.review3Url }}">{{ page.review3Name }}</a></small>
+          </blockquote>
+        </div>
+      </div>
+
+      <footer>
+		  {% include footer.html %}
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>
