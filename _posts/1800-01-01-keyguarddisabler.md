@@ -4,7 +4,7 @@ appName: Keyguard Disabler
 
 buyMeUrl: https://market.android.com/details?id=com.blau.android.keyguard
 
-promoText: 
+promoText: "Disable the lock screen and use your phone faster."
 aboutText: "No more fiddling with swiping the screen or pressing menu to unlock your phone.
 Disables the keyguard so you don't have to hit menu or swipe to unlock the phone.
 Tested on Nexus S, HTC Sensation, Evo 3D, Optimus 3D.
