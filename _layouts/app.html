@@ -58,7 +58,9 @@
 	                </div>
 	                <div class="span2">
 					{% if page.buyMeUrl %}
-		              <a class="btn info large" href="{{ page.tryMeUrl }}">Try Me &raquo;</a>
+					  {% if page.tryMeUrl %}
+		                <a class="btn info large" href="{{ page.tryMeUrl }}">Try Me &raquo;</a>
+					  {% endif %}
 					{% endif %}
 	                </div>
 	              </div>
